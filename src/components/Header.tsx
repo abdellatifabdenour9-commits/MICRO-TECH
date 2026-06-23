@@ -47,7 +47,8 @@ export const Header: React.FC<HeaderProps> = ({
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black/40 backdrop-blur-xl text-white shadow-lg" id="main-header">
+    <>
+      <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-black/40 backdrop-blur-xl text-white shadow-lg" id="main-header">
       {/* Top Banner with slogan */}
       <div className="bg-gradient-to-r from-blue-700/80 via-blue-600/80 to-emerald-600/80 backdrop-blur-md text-[11px] sm:text-xs py-1 px-4 text-center font-medium flex items-center justify-center gap-2 border-b border-white/5">
         <Sparkles size={14} className="animate-pulse" />
@@ -296,5 +297,5 @@ export const Header: React.FC<HeaderProps> = ({
     {showUserProfile && (
       <UserProfile onClose={() => setShowUserProfile(false)} />
     )}
-  </>;
+  </>);
 };

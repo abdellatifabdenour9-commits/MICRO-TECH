@@ -177,7 +177,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   // Check if admin
   const isAdmin = useCallback((): boolean => {
-    return authState.user?.role === 'admin' ?? false;
+    return authState.user?.role === 'admin';
   }, [authState.user]);
 
   // Update user
