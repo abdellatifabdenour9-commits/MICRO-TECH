@@ -1,0 +1,6 @@
+{
+  "name": "Micro Tech",
+  "description": "أفضل الحواسيب الأوروبية الأصلية بأفضل سعر وجودة في السوق الجزائري",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
